@@ -110,7 +110,7 @@ int main(void)
 								listaFiltro1 = ll_filter(listaDatos, ePost_filtrarMejoresPosteos);
 								if(listaFiltro1!= NULL)
 								{
-									controller_guardarListaFiltro1("mejoresPosteos.txt", listaFiltro1);
+									controller_guardarListaFiltro1("mejoresPosteos.csv", listaFiltro1);
 									ePost_imprimirTodo(listaFiltro1);
 								}
 								else
@@ -138,7 +138,7 @@ int main(void)
 								listaFiltro2 = ll_filter(listaDatos, ePost_filtrarPorHaters);
 								if(listaFiltro2!= NULL)
 								{
-									controller_guardarListaFiltro2("haters.txt", listaFiltro2);
+									controller_guardarListaFiltro2("haters.csv", listaFiltro2);
 									ePost_imprimirTodo(listaFiltro2);
 								}
 								else
